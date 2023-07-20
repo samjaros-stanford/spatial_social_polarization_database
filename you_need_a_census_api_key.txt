@@ -1,0 +1,12 @@
+To run much of the code in this repo, you need to have a census API key. 
+
+If you know that you have one and have it installed in your environment:
+- Great! You're good to go.
+
+If you don't have one or you're not sure:
+- Go to https://api.census.gov/data/key_signup.html and request a key
+- After they email you a key (it may take up to a day), create a file in this folder
+  called "census_api_key.txt" and paste your API key in it. It will be a long list
+  of numbers and characters.
+- NEVER share your API key or that file with anyone else, including
+  uploading your census_api_key.txt document to the internet.

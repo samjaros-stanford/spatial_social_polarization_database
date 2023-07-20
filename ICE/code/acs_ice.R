@@ -2,9 +2,9 @@ library(tidycensus)
 library(tidyverse)
 
 # Make sure your Census API key is loaded into the R environment
-Sys.getenv()["CENSUS_API_KEY"]
-# If not, use this line to load your key
-# census_api_key(read_lines(here::here("census_api_key.txt")), install=T)
+if(is.na(Sys.getenv()["CENSUS_API_KEY"])){
+  census_api_key(read_lines(here::here("census_api_key.txt")), install=T)
+}
 
 get_census_acs = function(geography, variables, year){
   # Different geographic levels have different caveats
