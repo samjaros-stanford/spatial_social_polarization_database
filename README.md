@@ -12,6 +12,7 @@ ICE can be calculated for any combination of privileged/disadvantaged: for examp
 ## About this Repository
 ### Available Data
 Download tables of ICE values as .csv files at the county, tract, and Zip Code Tabulation Area (ZCTA) level in the "ICE" folder. 
+Files are named with either "acs", indicating that census data were extracted from American Community Survey 5-year estimates or "dec", indicating that Decennial Census data were used.
 #### Data Dictionary
 | Variable       | Description | 
 | ---------------|--------------|
