@@ -12,6 +12,8 @@ A database of pre-calculated spatial social polarization variables and the code 
 ### Available Data
 Download tables of values contained within the folders listed here as a .csv file using the download button or you can use https to grab the files using the raw button. Files are named in the format `[index abbreviation]_[source abbreviation]_[source date]_[geographic level].csv`, for example `ice_acs_2010_county.csv` contains ICE values from the 2010 American Community Survey at the county level.
 
+==**NOTE:**== When you import the data, make sure the GEOID is being imported as a character, not a number. It is important to preserve leading zeros like for `01001`, a ZCTA in Agwam, Massachusetts. Opening the data in a program like Microsoft Excel or importing the data with `read.csv()` in `R` may remove these leading zeroes. Instead, we suggest using a program like [Notepad++](https://notepad-plus-plus.org/) or `readr::read_csv()` in `R`.
+
 ## Index of the Concentration at the Extremes
 
 The Index of Concentration at the Extremes (ICE), [developed by sociologist Douglas Massey](https://www.researchgate.net/publication/312987867_The_Prodigal_Paradigm_Returns_Ecology_Comes_Back_to_Sociology), compares the percent of population in an area that are in a 'privileged' group and the percent of a population in the same area that are in the 'deprived' group:
@@ -28,7 +30,7 @@ Based on the user's specifications, the code contained in `ICE > code > ice_mach
 ***ACS ICE variables:***
 
 |Column      |Name                  |Privileged                  |Deprived                              |2010               |2011              |2012              |
-|----------- |--------------------- |--------------------------- |------------------------------------- |------------------ |------------------ |------------------ |
+|----------- |--------------------- |--------------------------- |------------------------------------- |:----------------: |:----------------: |:----------------: |
 |GEOID       |[Geography identifier](www.census.gov/programs-surveys/geography/guidance/geo-identifiers.html) | | |County & tract|County, ZCTA, & tract |County, ZCTA, & tract|
 |ICEincome   |Income                |\>\$100k                    |\<\$25k                               |:white_check_mark: |:white_check_mark: |:white_check_mark: |
 |ICEraceeth  |Race/ethnicity        |White non-Hispanic          |Black non-Hispanic                    |:white_check_mark: |:white_check_mark: |:white_check_mark: |
@@ -41,7 +43,7 @@ Based on the user's specifications, the code contained in `ICE > code > ice_mach
 ***Decennial Census ICE variables:***
 
 |Column      |Name                  |Privileged                 |Deprived                              |2010               |
-|----------- |--------------------- |-------------------------- |------------------------------------- |------------------ |
+|----------- |--------------------- |-------------------------- |------------------------------------- |:----------------: |
 |GEOID       |[Geography identifier](www.census.gov/programs-surveys/geography/guidance/geo-identifiers.html) | | |County, ZCTA, & tract |
 |ICEincome   |Income                |\>\$75k                    |\<\$20k                               |:white_check_mark: |
 |ICEraceeth  |Race/ethnicity        |White non-Hispanic         |Black non-Hispanic                    |:white_check_mark: |
