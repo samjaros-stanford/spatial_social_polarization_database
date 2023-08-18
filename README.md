@@ -51,9 +51,30 @@ Based on the user's specifications, the code contained in `ICE > code > ice_mach
 |ICEedu      |Education             |Bachelor's degree or more  |Less than a high school degree        |:white_check_mark: |
 |ICElanguage |Language              |English only               |Spanish                               |:white_check_mark: |
 
-======
+### Defining your own ICE values
 
-## Funding
+The `ice_machine.R` code can be run using the `make_ice()` function that requires the user to specify the ICE formulas to be used, the geographic level of interest, the census survey to look for the variables in, and the survey year to use. A call to the function may look like:
+```
+make_ice(formulas = data.frame("ice_measure"="ICEhome",
+                               "privileged"="B03002_003",
+                               "deprived"="B03002_004",
+                               "total"="B03002_001"),
+         geography = "county",
+         survey = "acs",
+         year = 2010)
+```
 
-Sam Jaros is supported by the National Institute On Drug Abuse of the National Institutes of Health under Award Number F31DA057107. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.
+The `make_ice()` function in `ice_machine.R` accepts a data frame with the following named columns:
+
+`ice_measure`
+: The name for this ICE column in the returned data set
+
+`privileged`
+: A math formula of census variables defining the privileged group
+
+`deprived`
+: A math formula of census variables defining the deprived group
+
+`total`
+: A math formula of census variables defining the total that the privileged and deprived groups belong to
 
