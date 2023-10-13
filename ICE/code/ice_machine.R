@@ -4,9 +4,7 @@ library(tidyverse)
 # ↓↓↓ Use the bottom section to specify ICE variables ↓↓↓
 
 # Make sure your Census API key is loaded into the R environment
-if(is.na(Sys.getenv()["CENSUS_API_KEY"])){
-  census_api_key(read_lines(here::here("census_api_key.txt")), install=T)
-}
+census_api_key(read_lines(here::here("census_api_key.txt")), overwrite=T, install=T)
 
 # Function to interact with tidycensus to get ACS data
 # Accepts requested geography, census variable list, and year
@@ -117,7 +115,7 @@ make_ice = function(formulas, geography, survey, year){
 #   Specify your ICE formulas from a file or data frame (using ACS variable names)
 ice_acs_formulas = read.csv("ICE/code/ice_acs_formulas.csv")
 #   Specify your ACS parameters (geo = geographies vector, year = years vector)
-acs_params = expand.grid(geo = c("county", "zcta", "tract"), year = c(2010, 2011, 2012))
+acs_params = expand.grid(geo = c("county", "zcta", "tract"), year = c(2012:2020))
 #   Iterate through the parameters and save the datasets
 for(i in 1:nrow(acs_params)){
   write.csv(make_ice(ice_acs_formulas, acs_params[i,"geo"], "acs", acs_params[i,"year"]), 
