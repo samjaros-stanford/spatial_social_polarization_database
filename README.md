@@ -29,7 +29,7 @@ Based on the user's specifications, the code contained in `ICE > code > ice_mach
 
 ***ACS ICE variables:***
 
-|Column      |Name                  |Privileged                  |Deprived                              |2010               |2011              |2012              |
+|Column      |Name                  |Privileged                  |Deprived                              |2010               |2011              |2012-2020          |
 |----------- |--------------------- |--------------------------- |------------------------------------- |:----------------: |:----------------: |:----------------: |
 |GEOID       |[Geography identifier](www.census.gov/programs-surveys/geography/guidance/geo-identifiers.html) | | |County & tract|County, ZCTA, & tract |County, ZCTA, & tract|
 |ICEincome   |Income                |\>\$100k                    |\<\$25k                               |:white_check_mark: |:white_check_mark: |:white_check_mark: |
