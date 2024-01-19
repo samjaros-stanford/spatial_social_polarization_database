@@ -31,7 +31,7 @@ Based on the user's specifications, the code contained in `ICE > code > ice_mach
 ***ACS ICE variables:***
 
 | Column      | Name                                                                                            | Privileged                  | Deprived                             |        2010        |         2011          |       2012-2020       |
-|-------------|-------------------------------------------------------------------------------------------------|-----------------------------|--------------------------------------|:------------------:|:---------------------:|:---------------------:|
+|-----------|-----------|-----------|-----------|:---------:|:---------:|:---------:|
 | GEOID       | [Geography identifier](www.census.gov/programs-surveys/geography/guidance/geo-identifiers.html) |                             |                                      |   County & tract   | County, ZCTA, & tract | County, ZCTA, & tract |
 | ICEincome   | Income                                                                                          | \>\$100k                    | \<\$25k                              | :white_check_mark: |  :white_check_mark:   |  :white_check_mark:   |
 | ICEraceeth  | Race/ethnicity                                                                                  | White non-Hispanic          | Black non-Hispanic                   | :white_check_mark: |  :white_check_mark:   |  :white_check_mark:   |
@@ -45,8 +45,8 @@ Based on the user's specifications, the code contained in `ICE > code > ice_mach
 
 ***Decennial Census ICE variables:***
 
-| Column      | Name                                                                                            | Privileged                 | Deprived                             |         2010          |
-|-------------|-------------------------------------------------------------------------------------------------|----------------------------|--------------------------------------|:---------------------:|
+| Column      | Name                                                                                            | Privileged                 | Deprived                             |         2000          |
+|--------------|--------------|--------------|-------------------|:------------:|
 | GEOID       | [Geography identifier](www.census.gov/programs-surveys/geography/guidance/geo-identifiers.html) |                            |                                      | County, ZCTA, & tract |
 | ICEincome   | Income                                                                                          | \>\$75k                    | \<\$20k                              |  :white_check_mark:   |
 | ICEraceeth  | Race/ethnicity                                                                                  | White non-Hispanic         | Black non-Hispanic                   |  :white_check_mark:   |
