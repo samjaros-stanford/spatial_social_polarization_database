@@ -37,7 +37,7 @@ Based on the user's specifications, the code contained in `ICE > code > ice_mach
 | ICEraceeth  | Race/ethnicity                                                                                  | White non-Hispanic          | Black non-Hispanic                   | :white_check_mark: |  :white_check_mark:   |  :white_check_mark:   |
 | ICEhome     | Home ownership                                                                                  | Owner-occupied unit         | Renter-occupied unit                 | :white_check_mark: |  :white_check_mark:   |  :white_check_mark:   |
 | ICEincwb    | Income/race                                                                                     | White alone \>\$100k        | Black alone \<\$25k                  | :white_check_mark: |  :white_check_mark:   |  :white_check_mark:   |
-| ICEincwnh   | Income/race/ethnicity                                                                           | White non-Hispanic \>\$100k | \<\$25k - White non-Hispanic \<\$25k | :white_check_mark: |  :white_check_mark:   |  :white_check_mark:   |
+| ICEincwnh   | Income/race/ethnicity                                                                           | White non-Hispanic \>\$100k | \<\$25k except White non-Hispanic    | :white_check_mark: |  :white_check_mark:   |  :white_check_mark:   |
 | ICEedu      | Education                                                                                       | Bachelor's degree or more   | Less than a high school degree       |        :x:         |          :x:          |  :white_check_mark:   |
 | ICElanguage | Language                                                                                        | English only                | Spanish                              | :white_check_mark: |  :white_check_mark:   | :white_check_mark:\*  |
 
@@ -52,7 +52,7 @@ Based on the user's specifications, the code contained in `ICE > code > ice_mach
 | ICEraceeth  | Race/ethnicity                                                                                  | White non-Hispanic         | Black non-Hispanic                   |  :white_check_mark:   |
 | ICEhome     | Home ownership                                                                                  | Owner-occupied unit        | Renter-occupied unit                 |  :white_check_mark:   |
 | ICEincwb    | Income/race                                                                                     | White alone \>\$75k        | Black alone \<\$20k                  |  :white_check_mark:   |
-| ICEincwnh   | Income/race/ethnicity                                                                           | White non-Hispanic \>\$75k | \<\$20k - White non-Hispanic \<\$20k |  :white_check_mark:   |
+| ICEincwnh   | Income/race/ethnicity                                                                           | White non-Hispanic \>\$75k | \<\$20k except White non-Hispanic    |  :white_check_mark:   |
 | ICEedu      | Education                                                                                       | Bachelor's degree or more  | Less than a high school degree       |  :white_check_mark:   |
 | ICElanguage | Language                                                                                        | English only               | Spanish                              |  :white_check_mark:   |
 
